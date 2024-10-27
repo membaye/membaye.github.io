@@ -91,7 +91,7 @@ footer {
 
 .modal-content {
     background-color: #2C2C2C; /* Dark background for modal */
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 10% auto; /* 10% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
@@ -113,10 +113,11 @@ footer {
     cursor: pointer; /* Pointer cursor */
 }
 
-h2 {
+h2.modal-title {
     color: #E0E0E0; /* Light text for modal title */
 }
 
+/* List styles in modals */
 ul {
     list-style: none; /* No bullets */
     padding: 0; /* No padding */
