@@ -47,25 +47,17 @@ nav ul li a {
     transition: background 0.3s, color 0.3s; /* Smooth transitions */
 }
 
-nav ul li a:hover {
-    background: #FFFFFF; /* White background on hover */
-    color: #1E1E1E; /* Dark text on hover */
-}
-
-/* Resume Button Styles */
 #resume-button {
-    background-color: #FFFFFF; /* White button color */
-    color: #1E1E1E; /* Dark text */
-    padding: 10px 20px; /* Padding */
-    border: none; /* No border */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Pointer cursor */
-    transition: background 0.3s, color 0.3s; /* Smooth transition */
-    display: inline-block; /* Block display for spacing */
+    background-color: #FFFFFF; /* White for Resume button */
+    color: #1E1E1E; /* Dark text for visibility */
 }
 
 #resume-button:hover {
-    background-color: #E0E0E0; /* Light gray on hover */
+    background-color: #E0E0E0; /* Light grey on hover */
+}
+
+nav ul li a:hover {
+    background: #FFFFFF; /* White background on hover */
     color: #1E1E1E; /* Dark text on hover */
 }
 
@@ -176,7 +168,8 @@ ul li a:hover {
 
 #resume-overlay iframe {
     border: none; /* No border for the iframe */
-    height: 90%; /* Increased height for the overlay */
-    width: 90%; /* Increased width for the overlay */
-    margin: 5% auto; /* Centered with margin */
+    height: 90%; /* Increased height for visibility */
+    width: 90%; /* Increased width for visibility */
+    margin: 5% auto; /* Centered */
+    display: block; /* Block display for proper alignment */
 }
