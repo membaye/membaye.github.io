@@ -1,23 +1,15 @@
-title: Matthew Embaye's Portfolio  # Replace with your actual name
-email: membaye@uwaterloo.ca  # Replace with your actual email
-description: A site that tells you a little about myself and what i've done!
-
-# Navigation settings
-nav:
-  - title: "Resume"
-    url: "#"
-  - title: "Contact"
-    url: "#"
-
-# Markdown configuration
-markdown: kramdown
-
-# Theme and plugins
 theme: jekyll-theme-minimal
+
+header_pages:
+  - index.md
+  - resume.md
+  - contact.md
+
+markdown: kramdown
 plugins:
   - jekyll-feed
 
-# Social media links
-social:
-  github: "https://github.com/membaye"
-  linkedin: "https://www.linkedin.com/in/matthewembaye/"
+# Custom settings
+email: membaye@uwaterloo.ca
+linkedin: https://www.linkedin.com/in/matthewembaye/
+github: https://github.com/membaye
