@@ -14,29 +14,27 @@
         <nav>
             <ul>
                 <li><a href="{{ '/' | relative_url }}">Home</a></li>
-                <li><a href="{{ '/about' | relative_url }}">About</a></li>
+                <li><a href="#" id="resume-button">Resume</a></li>
                 <li><a href="#" id="contact-button">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
         {{ content }}
-        
-        <!-- Resume Button -->
-        <h2>Resume</h2>
-        <button id="resume-button">Resume</button>
     </main>
     <footer>
         <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</p>
     </footer>
 
-    <div id="resume-modal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <iframe src="{{ '/assets/resume.pdf' | relative_url }}" width="100%" height="100%" style="border:none;"></iframe>
-        </div>
+    <!-- Resume Overlay -->
+    <div id="resume-overlay" class="modal">
+        <span class="close">&times;</span>
+        <iframe src="{{ '/assets/resume.pdf' | relative_url }}" width="100%" height="100%">
+            This browser does not support PDFs. Please download the PDF to view it: <a href="{{ '/assets/resume.pdf' | relative_url }}">Download Resume</a>.
+        </iframe>
     </div>
 
+    <!-- Contact Modal -->
     <div id="contact-modal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
@@ -44,41 +42,43 @@
             <ul>
                 <li><a href="https://github.com/membaye" target="_blank">GitHub</a></li>
                 <li><a href="https://www.linkedin.com/in/matthewembaye/" target="_blank">LinkedIn</a></li>
-                <li><a href="#" id="resume-button-contact">Resume</a></li>
             </ul>
         </div>
     </div>
 
     <script>
-        // JavaScript to handle the modal
-        const contactButton = document.getElementById('contact-button');
+        // JavaScript to handle the modals
         const resumeButton = document.getElementById('resume-button');
+        const contactButton = document.getElementById('contact-button');
+        const resumeOverlay = document.getElementById('resume-overlay');
         const contactModal = document.getElementById('contact-modal');
-        const resumeModal = document.getElementById('resume-modal');
-        const closeContactModal = contactModal.getElementsByClassName('close')[0];
-        const closeResumeModal = resumeModal.getElementsByClassName('close')[0];
+        const closeButtons = document.getElementsByClassName('close');
 
+        // Open resume overlay
+        resumeButton.onclick = function() {
+            resumeOverlay.style.display = 'block';
+        }
+
+        // Open contact modal
         contactButton.onclick = function() {
             contactModal.style.display = 'block';
         }
 
-        resumeButton.onclick = function() {
-            resumeModal.style.display = 'block';
+        // Close modals and overlays
+        for (let i = 0; i < closeButtons.length; i++) {
+            closeButtons[i].onclick = function() {
+                resumeOverlay.style.display = 'none';
+                contactModal.style.display = 'none';
+            }
         }
 
-        closeContactModal.onclick = function() {
-            contactModal.style.display = 'none';
-        }
-
-        closeResumeModal.onclick = function() {
-            resumeModal.style.display = 'none';
-        }
-
+        // Close overlay if clicked outside
         window.onclick = function(event) {
+            if (event.target == resumeOverlay) {
+                resumeOverlay.style.display = 'none';
+            }
             if (event.target == contactModal) {
                 contactModal.style.display = 'none';
-            } else if (event.target == resumeModal) {
-                resumeModal.style.display = 'none';
             }
         }
     </script>
