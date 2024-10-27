@@ -39,10 +39,12 @@ layout: default
 
 <script>
     function openResume() {
+        document.body.style.overflow = 'hidden'; // Disable scrolling on the body
         document.getElementById('resume-overlay').style.display = 'block';
     }
 
     function closeResume() {
+        document.body.style.overflow = 'auto'; // Re-enable scrolling on the body
         document.getElementById('resume-overlay').style.display = 'none';
     }
 </script>
