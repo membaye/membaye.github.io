@@ -47,15 +47,6 @@ nav ul li a {
     transition: background 0.3s, color 0.3s; /* Smooth transitions */
 }
 
-#resume-button {
-    background-color: #FFFFFF; /* White for Resume button */
-    color: #1E1E1E; /* Dark text for visibility */
-}
-
-#resume-button:hover {
-    background-color: #E0E0E0; /* Light grey on hover */
-}
-
 nav ul li a:hover {
     background: #FFFFFF; /* White background on hover */
     color: #1E1E1E; /* Dark text on hover */
@@ -73,6 +64,22 @@ main {
 h2 {
     margin: 20px 0;
     color: #FFFFFF; /* White color for subheadings */
+}
+
+/* Resume Button Styles */
+#resume-button {
+    background-color: #FFFFFF; /* White button */
+    color: #1E1E1E; /* Dark text */
+    padding: 10px 20px; /* Padding */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: background 0.3s; /* Smooth transition */
+    display: inline-block; /* Block display for spacing */
+}
+
+#resume-button:hover {
+    background-color: #e0e0e0; /* Light gray on hover */
 }
 
 /* Footer */
@@ -95,8 +102,8 @@ footer {
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgba(0, 0, 0, 0.8); /* Black with opacity */
+    overflow: hidden; /* Disable scrolling */
+    background-color: rgba(0, 0, 0, 0.8); /* Translucent background */
 }
 
 .modal-content {
@@ -110,17 +117,20 @@ footer {
 }
 
 .close {
-    color: #E0E0E0; /* Light color */
+    color: #FFFFFF; /* White color */
     float: right; /* Align to the right */
-    font-size: 28px; /* Large size */
+    font-size: 36px; /* Larger size for better visibility */
     font-weight: bold; /* Bold */
+    margin-top: 10px; /* Add some space from the top */
+    cursor: pointer; /* Pointer cursor */
+    padding: 10px; /* Add padding for easier click */
+    transition: color 0.3s; /* Smooth transition for hover effect */
 }
 
 .close:hover,
 .close:focus {
-    color: #FFFFFF; /* White on hover */
+    color: #FFD700; /* Change color on hover (gold) */
     text-decoration: none; /* No underline */
-    cursor: pointer; /* Pointer cursor */
 }
 
 ul {
@@ -152,24 +162,4 @@ ul li a:hover {
     h1 {
         font-size: 2.5rem; /* Smaller header on mobile */
     }
-}
-
-/* Overlay Styles for Resume */
-#resume-overlay {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    background-color: rgba(0, 0, 0, 0.8); /* Translucent background */
-}
-
-#resume-overlay iframe {
-    border: none; /* No border for the iframe */
-    height: 90%; /* Increased height for visibility */
-    width: 90%; /* Increased width for visibility */
-    margin: 5% auto; /* Centered */
-    display: block; /* Block display for proper alignment */
 }
