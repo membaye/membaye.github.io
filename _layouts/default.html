@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"> <!-- Google Fonts link for Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ '/assets/custom.css' | relative_url }}">
 </head>
 <body>
@@ -15,7 +15,7 @@
             <ul>
                 <li><a href="{{ '/' | relative_url }}">Home</a></li>
                 <li><a href="{{ '/about' | relative_url }}">About</a></li>
-                <li><a href="https://github.com/membaye" target="_blank">GitHub</a></li>
+                <li><a href="#" id="contact-button">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -25,5 +25,38 @@
     <footer>
         <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</p>
     </footer>
+
+    <div id="contact-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Contact Me</h2>
+            <ul>
+                <li><a href="https://github.com/membaye" target="_blank">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></li>
+                <li><a href="path/to/your/resume.pdf" target="_blank">Resume</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript to handle the modal
+        const contactButton = document.getElementById('contact-button');
+        const modal = document.getElementById('contact-modal');
+        const closeModal = document.getElementsByClassName('close')[0];
+
+        contactButton.onclick = function() {
+            modal.style.display = 'block';
+        }
+
+        closeModal.onclick = function() {
+            modal.style.display = 'none';
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
 </body>
 </html>
