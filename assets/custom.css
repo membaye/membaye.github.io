@@ -54,18 +54,19 @@ nav ul li a:hover {
 
 /* Resume Button Styles */
 #resume-button {
-    background-color: #FFFFFF; /* White button */
+    background-color: #FFFFFF; /* White button color */
     color: #1E1E1E; /* Dark text */
     padding: 10px 20px; /* Padding */
     border: none; /* No border */
     border-radius: 5px; /* Rounded corners */
     cursor: pointer; /* Pointer cursor */
-    transition: background 0.3s; /* Smooth transition */
+    transition: background 0.3s, color 0.3s; /* Smooth transition */
     display: inline-block; /* Block display for spacing */
 }
 
 #resume-button:hover {
-    background: rgba(255, 255, 255, 0.8); /* Slightly transparent on hover */
+    background-color: #E0E0E0; /* Light gray on hover */
+    color: #1E1E1E; /* Dark text on hover */
 }
 
 main {
@@ -175,6 +176,7 @@ ul li a:hover {
 
 #resume-overlay iframe {
     border: none; /* No border for the iframe */
-    height: 100%; /* Full height */
-    width: 100%; /* Full width */
+    height: 90%; /* Increased height for the overlay */
+    width: 90%; /* Increased width for the overlay */
+    margin: 5% auto; /* Centered with margin */
 }
