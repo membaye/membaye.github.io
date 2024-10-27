@@ -26,15 +26,15 @@
         <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</p>
     </footer>
 
-    <!-- Resume Overlay -->
-    <div id="resume-overlay" class="modal">
-        <span class="close">&times;</span>
-        <iframe src="{{ '/assets/resume.pdf' | relative_url }}" width="100%" height="100%">
-            This browser does not support PDFs. Please download the PDF to view it: <a href="{{ '/assets/resume.pdf' | relative_url }}">Download Resume</a>.
-        </iframe>
+    <div id="resume-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <iframe src="{{ '/assets/resume.pdf' | relative_url }}" width="100%" height="600px">
+                This browser does not support PDFs. Please download the PDF to view it: <a href="{{ '/assets/resume.pdf' | relative_url }}">Download Resume</a>.
+            </iframe>
+        </div>
     </div>
 
-    <!-- Contact Modal -->
     <div id="contact-modal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
@@ -50,34 +50,28 @@
         // JavaScript to handle the modals
         const resumeButton = document.getElementById('resume-button');
         const contactButton = document.getElementById('contact-button');
-        const resumeOverlay = document.getElementById('resume-overlay');
+        const resumeModal = document.getElementById('resume-modal');
         const contactModal = document.getElementById('contact-modal');
         const closeButtons = document.getElementsByClassName('close');
 
-        // Open resume overlay
         resumeButton.onclick = function() {
-            resumeOverlay.style.display = 'block';
+            resumeModal.style.display = 'block';
         }
 
-        // Open contact modal
         contactButton.onclick = function() {
             contactModal.style.display = 'block';
         }
 
-        // Close modals and overlays
         for (let i = 0; i < closeButtons.length; i++) {
             closeButtons[i].onclick = function() {
-                resumeOverlay.style.display = 'none';
+                resumeModal.style.display = 'none';
                 contactModal.style.display = 'none';
             }
         }
 
-        // Close overlay if clicked outside
         window.onclick = function(event) {
-            if (event.target == resumeOverlay) {
-                resumeOverlay.style.display = 'none';
-            }
-            if (event.target == contactModal) {
+            if (event.target == resumeModal || event.target == contactModal) {
+                resumeModal.style.display = 'none';
                 contactModal.style.display = 'none';
             }
         }
