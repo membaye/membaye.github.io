@@ -3,10 +3,9 @@ layout: default
 title: Home
 ---
 
-## Hello and Welcome! My name is Matthew, thanks for stopping by.
+## Hello and Welcome!
 
 Hello! I'm Matthew, a passionate hardware design and technology enthusiast pursuing a degree in Electrical Engineering at the University of Waterloo. I enjoy building and using electronics to create solutions that solve various problems around the world. I'm from Calgary AB, however I am currently based in Waterloo ON, where I am studying and growing my skills within the tech industry.
-
 
 ### Projects
 
