@@ -7,8 +7,8 @@ title: Contact
 
 Feel free to reach out to me through the following platforms:
 
-- **LinkedIn**: [Your LinkedIn Profile](https://www.linkedin.com/in/matthewembaye/)
-- **GitHub**: [Your GitHub Profile](https://github.com/membaye)
-- **Email**: memb aye@uwaterloo.ca
+- **[LinkedIn](https://www.linkedin.com/in/matthewembaye/)**
+- **[GitHub](https://github.com/membaye)**
+- **Email**: membaye@uwaterloo.ca
 
 I look forward to hearing from you!
