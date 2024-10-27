@@ -1,77 +1,51 @@
+---
+layout: default
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{ '/assets/custom.css' | relative_url }}">
 </head>
 <body>
-    <header>
-        <h1>{{ site.title }}</h1>
-        <nav>
-            <ul>
-                <li><a href="#" id="resume-button">Resume</a></li>
-                <li><a href="#" id="contact-button">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        {{ content }}
-        
-        <!-- Resume Overlay -->
-        <div id="resume-overlay" class="modal">
-            <span class="close">&times;</span>
-            <iframe src="{{ '/assets/resume.pdf' | relative_url }}" width="100%" height="100%"></iframe>
-        </div>
-    </main>
-    <footer>
-        <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</p>
-    </footer>
 
-    <div id="contact-modal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Contact Me</h2>
-            <ul>
-                <li><a href="https://github.com/membaye" target="_blank">GitHub</a></li>
-                <li><a href="https://www.linkedin.com/in/matthewembaye/" target="_blank">LinkedIn</a></li>
-                <li>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></li>
-            </ul>
-        </div>
-    </div>
+<header>
+    <h1>{{ site.title }}</h1>
+    <nav>
+        <ul>
+            <li><a href="{{ site.baseurl }}/">Home</a></li>
+            <li><a id="resume-button" href="javascript:void(0);" onclick="openResume()">Resume</a></li>
+            <li><a href="{{ site.baseurl }}/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <script>
-        // JavaScript to handle the modals
-        const resumeButton = document.getElementById('resume-button');
-        const contactButton = document.getElementById('contact-button');
-        const resumeOverlay = document.getElementById('resume-overlay');
-        const contactModal = document.getElementById('contact-modal');
-        const closeModal = document.getElementsByClassName('close');
+<main>
+    {{ content }}
+</main>
 
-        resumeButton.onclick = function() {
-            resumeOverlay.style.display = 'block';
-        }
+<footer>
+    <p>© {{ site.year }} {{ site.author }}</p>
+</footer>
 
-        contactButton.onclick = function() {
-            contactModal.style.display = 'block';
-        }
+<!-- Resume Modal -->
+<div id="resume-overlay" class="modal">
+    <span class="close" onclick="closeResume()">&times;</span>
+    <iframe src="{{ '/assets/resume.pdf' | relative_url }}" height="100%" width="100%"></iframe>
+</div>
 
-        for (let i = 0; i < closeModal.length; i++) {
-            closeModal[i].onclick = function() {
-                resumeOverlay.style.display = 'none';
-                contactModal.style.display = 'none';
-            }
-        }
+<script>
+    function openResume() {
+        document.getElementById('resume-overlay').style.display = 'block';
+    }
 
-        window.onclick = function(event) {
-            if (event.target == resumeOverlay || event.target == contactModal) {
-                resumeOverlay.style.display = 'none';
-                contactModal.style.display = 'none';
-            }
-        }
-    </script>
+    function closeResume() {
+        document.getElementById('resume-overlay').style.display = 'none';
+    }
+</script>
+
 </body>
 </html>
