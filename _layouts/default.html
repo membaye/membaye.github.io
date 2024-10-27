@@ -15,18 +15,27 @@
             <ul>
                 <li><a href="{{ '/' | relative_url }}">Home</a></li>
                 <li><a href="{{ '/about' | relative_url }}">About</a></li>
-                <li><a href="#" id="contact-button">Contact</a></li>
+                <li><a="#" id="contact-button">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
         {{ content }}
-        
-        <!-- Resume Viewer Section -->
+
+        <!-- Resume Section -->
         <h2>Resume</h2>
-        <iframe src="{{ '/assets/resume.pdf' | relative_url }}" width="100%" height="600px">
-            This browser does not support PDFs. Please download the PDF to view it: <a href="{{ '/assets/resume.pdf' | relative_url }}">Download Resume</a>.
-        </iframe>
+        <button id="resume-button">View Resume</button>
+
+        <!-- Resume Modal -->
+        <div id="resume-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>My Resume</h2>
+                <iframe src="{{ '/assets/resume.pdf' | relative_url }}" width="100%" height="600px">
+                    This browser does not support PDFs. Please download the PDF to view it: <a href="{{ '/assets/resume.pdf' | relative_url }}">Download Resume</a>.
+                </iframe>
+            </div>
+        </div>
     </main>
     <footer>
         <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</p>
@@ -45,22 +54,42 @@
     </div>
 
     <script>
-        // JavaScript to handle the modal
+        // JavaScript to handle the modals
         const contactButton = document.getElementById('contact-button');
-        const modal = document.getElementById('contact-modal');
-        const closeModal = document.getElementsByClassName('close')[0];
+        const contactModal = document.getElementById('contact-modal');
+        const closeContactModal = contactModal.getElementsByClassName('close')[0];
 
+        const resumeButton = document.getElementById('resume-button');
+        const resumeModal = document.getElementById('resume-modal');
+        const closeResumeModal = resumeModal.getElementsByClassName('close')[0];
+
+        // Contact Modal
         contactButton.onclick = function() {
-            modal.style.display = 'block';
+            contactModal.style.display = 'block';
         }
 
-        closeModal.onclick = function() {
-            modal.style.display = 'none';
+        closeContactModal.onclick = function() {
+            contactModal.style.display = 'none';
         }
 
         window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = 'none';
+            if (event.target == contactModal) {
+                contactModal.style.display = 'none';
+            }
+        }
+
+        // Resume Modal
+        resumeButton.onclick = function() {
+            resumeModal.style.display = 'block';
+        }
+
+        closeResumeModal.onclick = function() {
+            resumeModal.style.display = 'none';
+        }
+
+        window.onclick = function(event) {
+            if (event.target == resumeModal) {
+                resumeModal.style.display = 'none';
             }
         }
     </script>
