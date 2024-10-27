@@ -7,27 +7,26 @@
 
 body {
     font-family: 'Inter', sans-serif !important; /* Use Inter font */
-    background-color: #121212; /* Dark background */
-    color: #E0E0E0; /* Light text color */
+    background-color: #F2F2F2; /* Light Gray for a clean background */
+    color: #333333; /* Dark Gray for primary text */
     line-height: 1.6;
 }
 
 header {
-    background: #1E1E1E; /* Darker gray background for header */
-    color: #E0E0E0; /* Light text */
-    padding: 30px 0; /* More padding for a spacious feel */
+    background: #FFFFFF; /* White background for header */
+    color: #333333; /* Dark text */
+    padding: 40px 0; /* Spacious header */
     text-align: center;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Slightly stronger shadow */
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 h1 {
     margin: 0;
-    font-size: 3rem; /* Larger header for emphasis */
-    letter-spacing: 1px; /* Increased letter spacing for a modern touch */
+    font-size: 3rem; /* Large header */
 }
 
 nav {
-    margin: 20px 0; /* More margin for spacing */
+    margin: 20px 0; /* Space for navigation */
 }
 
 nav ul {
@@ -41,52 +40,50 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #E0E0E0; /* Light text for links */
+    color: #007AFF; /* Apple blue for links */
     text-decoration: none;
-    padding: 10px 15px; /* Increased padding for buttons */
+    padding: 10px 15px; /* Button-like padding */
     border-radius: 5px; /* Rounded corners */
-    transition: background 0.3s, color 0.3s; /* Smooth transition for background and color */
+    transition: background 0.3s, color 0.3s; /* Smooth transitions */
 }
 
 nav ul li a:hover {
-    background: rgba(255, 255, 255, 0.1); /* Subtle hover effect */
-    color: #BB86FC; /* Change link color on hover for contrast */
+    background: rgba(0, 122, 255, 0.1); /* Light blue hover effect */
+    color: #0051A8; /* Darker blue on hover */
 }
 
 main {
-    max-width: 800px; /* Max width for content */
-    margin: 30px auto; /* Centered content with more margin */
-    padding: 30px; /* More padding for a spacious feel */
-    background: #1E1E1E; /* Dark background for content */
+    max-width: 800px; /* Centered content */
+    margin: 30px auto; /* Centered with margin */
+    padding: 30px; /* Padding for content */
+    background: #FFFFFF; /* White background for main content */
     border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Enhanced shadow for depth */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
 }
 
 h2 {
     margin: 20px 0;
-    color: #BB86FC; /* Purple color for headings */
-    font-size: 1.8rem; /* Slightly larger font size for subheadings */
+    color: #FF2D55; /* Pink color for subheadings */
 }
 
 footer {
     text-align: center;
     padding: 20px;
-    background: #1E1E1E; /* Dark background */
+    background: #F2F2F2; /* Light background */
     position: relative;
     bottom: 0;
     width: 100%;
-    color: #E0E0E0; /* Light text for footer */
-    font-size: 0.9rem; /* Smaller footer text */
+    color: #333333; /* Dark text for footer */
 }
 
 /* Responsive Design */
 @media (max-width: 600px) {
     nav ul li {
-        display: block; /* Stack links vertically on smaller screens */
+        display: block; /* Stack links on small screens */
         margin: 10px 0;
     }
 
     h1 {
-        font-size: 2.5rem; /* Adjust font size for smaller screens */
+        font-size: 2.5rem; /* Smaller header on mobile */
     }
 }
