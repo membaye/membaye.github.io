@@ -21,10 +21,21 @@
     </header>
     <main>
         {{ content }}
+        
+        <!-- Resume Button -->
+        <h2>Resume</h2>
+        <button id="resume-button">Resume</button>
     </main>
     <footer>
         <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</p>
     </footer>
+
+    <div id="resume-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <iframe src="{{ '/assets/resume.pdf' | relative_url }}" width="100%" height="100%" style="border:none;"></iframe>
+        </div>
+    </div>
 
     <div id="contact-modal" class="modal">
         <div class="modal-content">
@@ -33,20 +44,13 @@
             <ul>
                 <li><a href="https://github.com/membaye" target="_blank">GitHub</a></li>
                 <li><a href="https://www.linkedin.com/in/matthewembaye/" target="_blank">LinkedIn</a></li>
-                <li><a href="#" id="resume-button">View Resume</a></li>
+                <li><a href="#" id="resume-button-contact">Resume</a></li>
             </ul>
         </div>
     </div>
 
-    <div id="resume-modal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <iframe src="{{ '/assets/resume.pdf' | relative_url }}" width="100%" height="600px" style="border: none;"></iframe>
-        </div>
-    </div>
-
     <script>
-        // JavaScript to handle the modals
+        // JavaScript to handle the modal
         const contactButton = document.getElementById('contact-button');
         const resumeButton = document.getElementById('resume-button');
         const contactModal = document.getElementById('contact-modal');
@@ -58,17 +62,16 @@
             contactModal.style.display = 'block';
         }
 
+        resumeButton.onclick = function() {
+            resumeModal.style.display = 'block';
+        }
+
         closeContactModal.onclick = function() {
             contactModal.style.display = 'none';
         }
 
         closeResumeModal.onclick = function() {
             resumeModal.style.display = 'none';
-        }
-
-        resumeButton.onclick = function() {
-            resumeModal.style.display = 'block';
-            contactModal.style.display = 'none'; // Close contact modal if open
         }
 
         window.onclick = function(event) {
