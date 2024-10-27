@@ -2,14 +2,9 @@ theme: jekyll-theme-minimal
 
 header_pages:
   - index.md
-  - resume.md
-  - contact.md
+  - contact.md  # Assuming you have a contact.md file
 
 markdown: kramdown
+
 plugins:
   - jekyll-feed
-
-# Custom settings
-email: membaye@uwaterloo.ca
-linkedin: https://www.linkedin.com/in/matthewembaye/
-github: https://github.com/membaye
