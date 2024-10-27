@@ -92,8 +92,7 @@ footer {
 .modal-content {
     background-color: #2C2C2C; /* Dark background for modal */
     margin: 10% auto; /* 10% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
+    padding: 0; /* No padding, just the iframe */
     width: 80%; /* Could be more or less, depending on screen size */
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Soft shadow */
@@ -113,28 +112,13 @@ footer {
     cursor: pointer; /* Pointer cursor */
 }
 
-h2.modal-title {
-    color: #E0E0E0; /* Light text for modal title */
+/* Resume Modal Styles */
+#resume-modal .modal-content {
+    padding: 0; /* Remove padding to focus on the resume */
 }
 
-/* List styles in modals */
-ul {
-    list-style: none; /* No bullets */
-    padding: 0; /* No padding */
-}
-
-ul li {
-    margin: 10px 0; /* Space between items */
-}
-
-ul li a {
-    color: #FFFFFF; /* White links */
-    text-decoration: none; /* No underline */
-    transition: color 0.3s; /* Smooth transition */
-}
-
-ul li a:hover {
-    color: #1E1E1E; /* Darker text on hover */
+iframe {
+    border: none; /* Remove border from iframe */
 }
 
 /* Responsive Design */
