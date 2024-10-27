@@ -13,7 +13,6 @@
         <h1>{{ site.title }}</h1>
         <nav>
             <ul>
-                <li><a href="{{ '/' | relative_url }}">Home</a></li>
                 <li><a href="#" id="resume-button">Resume</a></li>
                 <li><a href="#" id="contact-button">Contact</a></li>
             </ul>
@@ -21,19 +20,16 @@
     </header>
     <main>
         {{ content }}
+        
+        <!-- Resume Overlay -->
+        <div id="resume-overlay" class="modal">
+            <span class="close">&times;</span>
+            <iframe src="{{ '/assets/resume.pdf' | relative_url }}" width="100%" height="100%"></iframe>
+        </div>
     </main>
     <footer>
         <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</p>
     </footer>
-
-    <div id="resume-modal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <iframe src="{{ '/assets/resume.pdf' | relative_url }}" width="100%" height="600px">
-                This browser does not support PDFs. Please download the PDF to view it: <a href="{{ '/assets/resume.pdf' | relative_url }}">Download Resume</a>.
-            </iframe>
-        </div>
-    </div>
 
     <div id="contact-modal" class="modal">
         <div class="modal-content">
@@ -42,6 +38,7 @@
             <ul>
                 <li><a href="https://github.com/membaye" target="_blank">GitHub</a></li>
                 <li><a href="https://www.linkedin.com/in/matthewembaye/" target="_blank">LinkedIn</a></li>
+                <li>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></li>
             </ul>
         </div>
     </div>
@@ -50,28 +47,28 @@
         // JavaScript to handle the modals
         const resumeButton = document.getElementById('resume-button');
         const contactButton = document.getElementById('contact-button');
-        const resumeModal = document.getElementById('resume-modal');
+        const resumeOverlay = document.getElementById('resume-overlay');
         const contactModal = document.getElementById('contact-modal');
-        const closeButtons = document.getElementsByClassName('close');
+        const closeModal = document.getElementsByClassName('close');
 
         resumeButton.onclick = function() {
-            resumeModal.style.display = 'block';
+            resumeOverlay.style.display = 'block';
         }
 
         contactButton.onclick = function() {
             contactModal.style.display = 'block';
         }
 
-        for (let i = 0; i < closeButtons.length; i++) {
-            closeButtons[i].onclick = function() {
-                resumeModal.style.display = 'none';
+        for (let i = 0; i < closeModal.length; i++) {
+            closeModal[i].onclick = function() {
+                resumeOverlay.style.display = 'none';
                 contactModal.style.display = 'none';
             }
         }
 
         window.onclick = function(event) {
-            if (event.target == resumeModal || event.target == contactModal) {
-                resumeModal.style.display = 'none';
+            if (event.target == resumeOverlay || event.target == contactModal) {
+                resumeOverlay.style.display = 'none';
                 contactModal.style.display = 'none';
             }
         }
