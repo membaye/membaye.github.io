@@ -1,3 +1,5 @@
+/* Existing styles */
+
 /* Reset some default styles */
 * {
     box-sizing: border-box;
@@ -74,6 +76,66 @@ footer {
     bottom: 0;
     width: 100%;
     color: #333333; /* Dark text for footer */
+}
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.5); /* Black with opacity */
+}
+
+.modal-content {
+    background-color: #FFFFFF; /* White background */
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Soft shadow */
+}
+
+.close {
+    color: #aaa; /* Gray */
+    float: right; /* Align to the right */
+    font-size: 28px; /* Large size */
+    font-weight: bold; /* Bold */
+}
+
+.close:hover,
+.close:focus {
+    color: black; /* Darker on hover */
+    text-decoration: none; /* No underline */
+    cursor: pointer; /* Pointer cursor */
+}
+
+h2 {
+    color: #333333; /* Dark text for modal title */
+}
+
+ul {
+    list-style: none; /* No bullets */
+    padding: 0; /* No padding */
+}
+
+ul li {
+    margin: 10px 0; /* Space between items */
+}
+
+ul li a {
+    color: #007AFF; /* Blue links */
+    text-decoration: none; /* No underline */
+    transition: color 0.3s; /* Smooth transition */
+}
+
+ul li a:hover {
+    color: #0051A8; /* Darker blue on hover */
 }
 
 /* Responsive Design */
