@@ -52,18 +52,35 @@ nav ul li a:hover {
     color: #1E1E1E; /* Dark text on hover */
 }
 
-/* Resume Button Styles */
-#resume-button {
-    background-color: #FFFFFF; /* White button for Resume */
+/* Adjust main content for better spacing */
+main {
+    max-width: 800px; /* Centered content */
+    margin: 30px auto; /* Centered with margin */
+    padding: 30px; /* Padding for content */
+    background: #2C2C2C; /* Dark background for main content */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Soft shadow */
+}
+
+/* Spacing for the home page content */
+h2 {
+    margin: 20px 0;
+    color: #FFFFFF; /* White color for subheadings */
+}
+
+/* Contact Button Styles */
+.contact-button {
+    background-color: #FFFFFF; /* White background */
     color: #1E1E1E; /* Dark text */
     padding: 10px 20px; /* Padding */
     border: none; /* No border */
     border-radius: 5px; /* Rounded corners */
     cursor: pointer; /* Pointer cursor */
     transition: background 0.3s; /* Smooth transition */
+    display: inline-block; /* Block display for spacing */
 }
 
-#resume-button:hover {
+.contact-button:hover {
     background-color: #E0E0E0; /* Light gray on hover */
 }
 
@@ -87,16 +104,18 @@ footer {
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
+    overflow: hidden; /* Disable scrolling */
     background-color: rgba(0, 0, 0, 0.8); /* Black with opacity */
 }
 
 .modal-content {
     background-color: #2C2C2C; /* Dark background for modal */
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 0; /* No padding */
+    margin: 5% auto; /* 5% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
     border-radius: 10px; /* Rounded corners */
-    overflow: hidden; /* Prevent scroll */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Soft shadow */
 }
 
 .close {
@@ -104,12 +123,44 @@ footer {
     float: right; /* Align to the right */
     font-size: 28px; /* Large size */
     font-weight: bold; /* Bold */
-    cursor: pointer; /* Pointer cursor */
 }
 
 .close:hover,
 .close:focus {
     color: #FFFFFF; /* White on hover */
+    text-decoration: none; /* No underline */
+    cursor: pointer; /* Pointer cursor */
+}
+
+ul {
+    list-style: none; /* No bullets */
+    padding: 0; /* No padding */
+}
+
+ul li {
+    margin: 10px 0; /* Space between items */
+}
+
+ul li a {
+    color: #FFFFFF; /* White links */
+    text-decoration: none; /* No underline */
+    transition: color 0.3s; /* Smooth transition */
+}
+
+ul li a:hover {
+    color: #1E1E1E; /* Darker text on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block; /* Stack links on small screens */
+        margin: 10px 0;
+    }
+
+    h1 {
+        font-size: 2.5rem; /* Smaller header on mobile */
+    }
 }
 
 /* Overlay Styles for Resume */
@@ -126,16 +177,6 @@ footer {
 
 #resume-overlay iframe {
     border: none; /* No border for the iframe */
-    height: calc(100vh - 40px); /* Full height minus some padding */
+    height: 100%; /* Full height */
     width: 100%; /* Full width */
 }
-
-/* Responsive Design */
-@media (max-width: 600px) {
-    nav ul li {
-        display: block; /* Stack links on small screens */
-        margin: 10px 0;
-    }
-
-    h1 {
-        font
