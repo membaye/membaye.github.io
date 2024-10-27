@@ -13,9 +13,8 @@
         <h1>{{ site.title }}</h1>
         <nav>
             <ul>
-                <li><a href="{{ '/' | relative_url }}">Home</a></li>
-                <li><a href="#" id="resume-button" class="contact-button">Resume</a></li>
-                <li><a href="#" id="contact-button" class="contact-button">Contact</a></li>
+                <li><a href="#" id="resume-button" class="resume-button">Resume</a></li>
+                <li><a href="#" id="contact-button" class="contact-button">Contact</a></li> <!-- Contact button styled as requested -->
             </ul>
         </nav>
     </header>
@@ -32,18 +31,18 @@
             <span class="close">&times;</span>
             <h2>Contact Me</h2>
             <ul>
-                <li><a href="https://github.com/membaye" target="_blank" class="contact-button">GitHub</a></li>
-                <li><a href="https://www.linkedin.com/in/matthewembaye/" target="_blank" class="contact-button">LinkedIn</a></li>
-                <li>Email: <a href="mailto:membaye@uwaterloo.ca" class="contact-button">membaye@uwaterloo.ca</a></li>
+                <li><a href="https://github.com/membaye" target="_blank" class="contact-link">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/matthewembaye/" target="_blank" class="contact-link">LinkedIn</a></li>
+                <li>Email: <a href="mailto:membaye@uwaterloo.ca" class="contact-link">membaye@uwaterloo.ca</a></li>
             </ul>
         </div>
     </div>
 
     <!-- Resume Overlay -->
     <div id="resume-overlay" class="modal">
-        <div class="modal-content">
+        <div class="modal-content" style="max-width: 90%; max-height: 90%; margin: auto; overflow: hidden;">
             <span class="close">&times;</span>
-            <iframe src="{{ '/assets/resume.pdf' | relative_url }}" height="100%" width="100%"></iframe>
+            <iframe src="{{ '/assets/resume.pdf' | relative_url }}" height="100%" width="100%" style="border: none;"></iframe>
         </div>
     </div>
 
