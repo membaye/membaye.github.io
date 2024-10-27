@@ -66,6 +66,23 @@ h2 {
     color: #FFFFFF; /* White color for subheadings */
 }
 
+/* Resume Button Styles */
+#resume-button {
+    background-color: #007bff; /* Button color */
+    color: #fff; /* White text */
+    padding: 10px 20px; /* Padding */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: background 0.3s; /* Smooth transition */
+    display: inline-block; /* Block display for spacing */
+}
+
+#resume-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Footer */
 footer {
     text-align: center;
     padding: 20px;
@@ -91,8 +108,9 @@ footer {
 
 .modal-content {
     background-color: #2C2C2C; /* Dark background for modal */
-    margin: 10% auto; /* 10% from the top and centered */
-    padding: 0; /* No padding, just the iframe */
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Soft shadow */
@@ -112,13 +130,23 @@ footer {
     cursor: pointer; /* Pointer cursor */
 }
 
-/* Resume Modal Styles */
-#resume-modal .modal-content {
-    padding: 0; /* Remove padding to focus on the resume */
+ul {
+    list-style: none; /* No bullets */
+    padding: 0; /* No padding */
 }
 
-iframe {
-    border: none; /* Remove border from iframe */
+ul li {
+    margin: 10px 0; /* Space between items */
+}
+
+ul li a {
+    color: #FFFFFF; /* White links */
+    text-decoration: none; /* No underline */
+    transition: color 0.3s; /* Smooth transition */
+}
+
+ul li a:hover {
+    color: #1E1E1E; /* Darker text on hover */
 }
 
 /* Responsive Design */
