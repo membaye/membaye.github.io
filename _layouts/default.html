@@ -1,53 +1,81 @@
----
-layout: default
----
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
     <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ '/assets/custom.css' | relative_url }}">
 </head>
 <body>
+    <header>
+        <h1>{{ site.title }}</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ '/' | relative_url }}">Home</a></li>
+                <li><a href="#" id="resume-button">Resume</a></li>
+                <li><a href="#" id="contact-button">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {{ content }}
+    </main>
+    <footer>
+        <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</p>
+    </footer>
 
-<header>
-    <h1>{{ site.title }}</h1>
-    <nav>
-        <ul>
-            <li><a href="{{ site.baseurl }}/">Home</a></li>
-            <li><a id="resume-button" href="javascript:void(0);" onclick="openResume()">Resume</a></li>
-            <li><a href="{{ site.baseurl }}/contact.html">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+    <!-- Contact Modal -->
+    <div id="contact-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Contact Me</h2>
+            <ul>
+                <li><a href="https://github.com/membaye" target="_blank">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/matthewembaye/" target="_blank">LinkedIn</a></li>
+                <li>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></li>
+            </ul>
+        </div>
+    </div>
 
-<main>
-    {{ content }}
-</main>
+    <!-- Resume Overlay -->
+    <div id="resume-overlay" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <iframe src="{{ '/assets/resume.pdf' | relative_url }}" height="100%" width="100%"></iframe>
+        </div>
+    </div>
 
-<footer>
-    <p>© {{ site.year }} {{ site.author }}</p>
-</footer>
+    <script>
+        // JavaScript to handle the modals
+        const contactButton = document.getElementById('contact-button');
+        const contactModal = document.getElementById('contact-modal');
+        const resumeButton = document.getElementById('resume-button');
+        const resumeOverlay = document.getElementById('resume-overlay');
+        const closeButtons = document.getElementsByClassName('close');
 
-<!-- Resume Modal -->
-<div id="resume-overlay" class="modal">
-    <span class="close" onclick="closeResume()">&times;</span>
-    <iframe src="{{ '/assets/resume.pdf' | relative_url }}" height="100%" width="100%"></iframe>
-</div>
+        contactButton.onclick = function() {
+            contactModal.style.display = 'block';
+        }
 
-<script>
-    function openResume() {
-        document.body.style.overflow = 'hidden'; // Disable scrolling on the body
-        document.getElementById('resume-overlay').style.display = 'block';
-    }
+        resumeButton.onclick = function() {
+            resumeOverlay.style.display = 'block';
+        }
 
-    function closeResume() {
-        document.body.style.overflow = 'auto'; // Re-enable scrolling on the body
-        document.getElementById('resume-overlay').style.display = 'none';
-    }
-</script>
+        for (let closeButton of closeButtons) {
+            closeButton.onclick = function() {
+                contactModal.style.display = 'none';
+                resumeOverlay.style.display = 'none';
+            }
+        }
 
+        window.onclick = function(event) {
+            if (event.target == contactModal || event.target == resumeOverlay) {
+                contactModal.style.display = 'none';
+                resumeOverlay.style.display = 'none';
+            }
+        }
+    </script>
 </body>
 </html>
