@@ -1,5 +1,3 @@
-/* Existing styles */
-
 /* Reset some default styles */
 * {
     box-sizing: border-box;
@@ -9,17 +7,17 @@
 
 body {
     font-family: 'Inter', sans-serif !important; /* Use Inter font */
-    background-color: #F2F2F2; /* Light Gray for a clean background */
-    color: #333333; /* Dark Gray for primary text */
+    background-color: #1E1E1E; /* Dark background */
+    color: #E0E0E0; /* Light text color */
     line-height: 1.6;
 }
 
 header {
-    background: #FFFFFF; /* White background for header */
-    color: #333333; /* Dark text */
+    background: #2C2C2C; /* Darker header background */
+    color: #FFFFFF; /* White text */
     padding: 40px 0; /* Spacious header */
     text-align: center;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow */
 }
 
 h1 {
@@ -42,7 +40,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #007AFF; /* Apple blue for links */
+    color: #FFFFFF; /* White for links */
     text-decoration: none;
     padding: 10px 15px; /* Button-like padding */
     border-radius: 5px; /* Rounded corners */
@@ -50,32 +48,32 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background: rgba(0, 122, 255, 0.1); /* Light blue hover effect */
-    color: #0051A8; /* Darker blue on hover */
+    background: #FFFFFF; /* White background on hover */
+    color: #1E1E1E; /* Dark text on hover */
 }
 
 main {
     max-width: 800px; /* Centered content */
     margin: 30px auto; /* Centered with margin */
     padding: 30px; /* Padding for content */
-    background: #FFFFFF; /* White background for main content */
+    background: #2C2C2C; /* Dark background for main content */
     border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Soft shadow */
 }
 
 h2 {
     margin: 20px 0;
-    color: #FF2D55; /* Pink color for subheadings */
+    color: #FFFFFF; /* White color for subheadings */
 }
 
 footer {
     text-align: center;
     padding: 20px;
-    background: #F2F2F2; /* Light background */
+    background: #2C2C2C; /* Dark background */
     position: relative;
     bottom: 0;
     width: 100%;
-    color: #333333; /* Dark text for footer */
+    color: #E0E0E0; /* Light text for footer */
 }
 
 /* Modal Styles */
@@ -88,21 +86,21 @@ footer {
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgba(0, 0, 0, 0.5); /* Black with opacity */
+    background-color: rgba(0, 0, 0, 0.8); /* Black with opacity */
 }
 
 .modal-content {
-    background-color: #FFFFFF; /* White background */
+    background-color: #2C2C2C; /* Dark background for modal */
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
     border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Soft shadow */
 }
 
 .close {
-    color: #aaa; /* Gray */
+    color: #E0E0E0; /* Light color */
     float: right; /* Align to the right */
     font-size: 28px; /* Large size */
     font-weight: bold; /* Bold */
@@ -110,13 +108,13 @@ footer {
 
 .close:hover,
 .close:focus {
-    color: black; /* Darker on hover */
+    color: #FFFFFF; /* White on hover */
     text-decoration: none; /* No underline */
     cursor: pointer; /* Pointer cursor */
 }
 
 h2 {
-    color: #333333; /* Dark text for modal title */
+    color: #E0E0E0; /* Light text for modal title */
 }
 
 ul {
@@ -129,13 +127,13 @@ ul li {
 }
 
 ul li a {
-    color: #007AFF; /* Blue links */
+    color: #FFFFFF; /* White links */
     text-decoration: none; /* No underline */
     transition: color 0.3s; /* Smooth transition */
 }
 
 ul li a:hover {
-    color: #0051A8; /* Darker blue on hover */
+    color: #1E1E1E; /* Darker text on hover */
 }
 
 /* Responsive Design */
