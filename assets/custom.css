@@ -160,3 +160,21 @@ ul li a:hover {
         font-size: 2.5rem; /* Smaller header on mobile */
     }
 }
+
+/* Overlay Styles for Resume */
+#resume-overlay {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.8); /* Translucent background */
+}
+
+#resume-overlay iframe {
+    border: none; /* No border for the iframe */
+    height: 100%; /* Full height */
+    width: 100%; /* Full width */
+}
