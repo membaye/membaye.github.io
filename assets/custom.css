@@ -76,7 +76,7 @@ h2 {
     border: none; /* No border */
     border-radius: 5px; /* Rounded corners */
     cursor: pointer; /* Pointer cursor */
-    transition: background 0.3s; /* Smooth transition */
+    transition: background 0.3s, color 0.3s; /* Smooth transition */
     display: inline-block; /* Block display for spacing */
     font-weight: bold; /* Bold text */
 }
