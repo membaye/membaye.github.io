@@ -14,7 +14,7 @@
         <nav>
             <ul>
                 <li><a href="#" id="resume-button" class="resume-button">Resume</a></li>
-                <li><a href="#" id="contact-button" class="contact-button">Contact</a></li> <!-- Contact button styled as requested -->
+                <li><a href="#" id="contact-button" class="contact-button">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -30,24 +30,24 @@
         <div class="modal-content">
             <span class="close">&times;</span>
             <h2>Contact Me</h2>
-            <ul>
-                <li><a href="https://github.com/membaye" target="_blank" class="contact-link">GitHub</a></li>
-                <li><a href="https://www.linkedin.com/in/matthewembaye/" target="_blank" class="contact-link">LinkedIn</a></li>
-                <li>Email: <a href="mailto:membaye@uwaterloo.ca" class="contact-link">membaye@uwaterloo.ca</a></li>
-            </ul>
+            <div class="contact-modal-buttons">
+                <a href="https://github.com/membaye" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/matthewembaye/" target="_blank">LinkedIn</a>
+                <a href="mailto:membaye@uwaterloo.ca">Email</a>
+                <span class="contact-modal-email-display">membaye@uwaterloo.ca</span>
+            </div>
         </div>
     </div>
 
     <!-- Resume Overlay -->
     <div id="resume-overlay" class="modal">
-        <div class="modal-content" style="max-width: 90%; max-height: 90%; margin: auto; overflow: hidden;">
+        <div class="modal-content">
             <span class="close">&times;</span>
-            <iframe src="{{ '/assets/resume.pdf' | relative_url }}" height="100%" width="100%" style="border: none;"></iframe>
+            <iframe src="{{ '/assets/resume.pdf' | relative_url }}"></iframe>
         </div>
     </div>
 
     <script>
-        // JavaScript to handle the modals
         const contactButton = document.getElementById('contact-button');
         const contactModal = document.getElementById('contact-modal');
         const resumeButton = document.getElementById('resume-button');
