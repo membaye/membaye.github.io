@@ -6,32 +6,29 @@
 }
 
 body {
-    font-family: 'Inter', sans-serif !important; /* Use Inter font */
-    background-color: #1E1E1E; /* Dark background */
-    color: #E0E0E0; /* Light text color */
+    font-family: 'Inter', sans-serif;
+    background-color: #212227; /* Dark background */
+    color: #F0F3F7; /* Light text color */
     line-height: 1.6;
 }
 
 header {
-    background: #2C2C2C; /* Darker header background */
-    color: #FFFFFF; /* White text */
-    padding: 40px 0; /* Spacious header */
+    background: #2F2F2F;
+    color: #F0F3F7;
+    padding: 40px 0;
     text-align: center;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
 }
 
 h1 {
     margin: 0;
-    font-size: 3rem; /* Large header */
-}
-
-nav {
-    margin: 20px 0; /* Space for navigation */
+    font-size: 3rem;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 20px 0;
 }
 
 nav ul li {
@@ -40,120 +37,126 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #FFFFFF; /* White for links */
+    color: #F0F3F7;
     text-decoration: none;
-    padding: 10px 15px; /* Button-like padding */
-    border-radius: 5px; /* Rounded corners */
-    transition: background 0.3s, color 0.3s; /* Smooth transitions */
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
 }
 
-/* Resume Button Styles */
 .resume-button {
-    background-color: #FFFFFF; /* White button */
-    color: #1E1E1E; /* Dark text */
-    padding: 10px 20px; /* Padding */
-    border: none; /* No border */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Pointer cursor */
-    transition: background 0.3s; /* Smooth transition */
-    display: inline-block; /* Block display for spacing */
+    background-color: #EEC643;
+    color: #2F2F2F;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    display: inline-block;
 }
 
 .resume-button:hover {
-    background-color: #1E1E1E; /* Dark background on hover */
-    color: #FFFFFF; /* White text on hover */
+    background-color: #F0F3F7;
+    color: #2F2F2F;
 }
 
-/* Contact Button Styles */
 .contact-button {
-    color: #FFFFFF; /* White text */
-    text-decoration: none; /* No underline */
-    padding: 10px 15px; /* Button-like padding */
-    border-radius: 5px; /* Rounded corners */
-    transition: background 0.3s, color 0.3s; /* Smooth transitions */
+    background-color: #EEC643;
+    color: #2F2F2F;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+    display: inline-block;
 }
 
 .contact-button:hover {
-    background: #FFFFFF; /* White background on hover */
-    color: #1E1E1E; /* Dark text on hover */
+    background-color: #F0F3F7;
+    color: #2F2F2F;
 }
 
 main {
-    max-width: 800px; /* Centered content */
-    margin: 30px auto; /* Centered with margin */
-    padding: 30px; /* Padding for content */
-    background: #2C2C2C; /* Dark background for main content */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Soft shadow */
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 30px;
+    background: #2F2F2F;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
-h2 {
-    margin: 20px 0;
-    color: #FFFFFF; /* White color for subheadings */
-}
-
-/* Footer */
 footer {
     text-align: center;
     padding: 20px;
-    background: #2C2C2C; /* Dark background */
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    color: #E0E0E0; /* Light text for footer */
+    background: #2F2F2F;
+    color: #F0F3F7;
 }
 
 /* Modal Styles */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    display: none;
+    position: fixed;
+    z-index: 1;
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgba(0, 0, 0, 0.8); /* Black with opacity */
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .modal-content {
-    background-color: #2C2C2C; /* Dark background for modal */
-    margin: 15% auto; /* 15% from the top and centered */
+    background-color: #2F2F2F;
+    margin: 5% auto;
     padding: 20px;
-    border: 1px solid #888;
-    width: 90%; /* Increased width for larger viewing */
-    height: auto; /* Auto height */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Soft shadow */
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
-/* Overlay Styles for Resume */
-#resume-overlay {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    background-color: rgba(0, 0, 0, 0.8); /* Translucent background */
-}
-
-/* Prevent scrolling on overlay */
 #resume-overlay iframe {
-    border: none; /* No border for the iframe */
-    height: 100%; /* Full height */
-    width: 100%; /* Full width */
+    border: none;
+    width: 100%;
+    height: 100%;
 }
 
-/* Responsive Design */
-@media (max-width: 600px) {
-    nav ul li {
-        display: block; /* Stack links on small screens */
-        margin: 10px 0;
-    }
+.modal-content .close {
+    color: #EEC643;
+    font-size: 28px;
+    font-weight: bold;
+    float: right;
+    cursor: pointer;
+}
 
-    h1 {
-        font-size: 2.5rem; /* Smaller header on mobile */
-    }
+.modal-content .close:hover {
+    color: #F0F3F7;
+}
+
+/* Buttons in Contact Modal */
+.contact-modal-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-modal-buttons a {
+    background-color: #EEC643;
+    color: #2F2F2F;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.contact-modal-buttons a:hover {
+    background-color: #F0F3F7;
+    color: #2F2F2F;
+}
+
+.contact-modal-email-display {
+    color: #EEC643;
+    font-size: 1rem;
+    margin-left: 10px;
 }
