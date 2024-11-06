@@ -127,16 +127,16 @@ footer {
 #contact-modal ul li a {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #2F2F2F;
-    color: #FFFFFF;
+    background-color: #3F8EFC;
+    color: #F0F3F7;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
 }
 
 #contact-modal ul li a:hover {
-    background-color: #3F8EFC;
-    color: #F0F3F7;
+    background-color: #F0F3F7;
+    color: #3F8EFC;
 }
 
 /* Buttons for Contact Info */
