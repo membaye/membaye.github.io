@@ -37,7 +37,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #2D3048;
+    background-color: #3F8EFC;
     color: #F0F3F7;
 }
 
@@ -78,7 +78,7 @@ nav ul li a:hover {
 .download-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #2D3048;
+    background-color: #3F8EFC;
     color: #F0F3F7;
     text-align: center;
     text-decoration: none;
@@ -88,7 +88,7 @@ nav ul li a:hover {
 
 .download-button:hover {
     background-color: #F0F3F7;
-    color: #2D3048;
+    color: #3F8EFC;
 }
 
 /* Close Button */
@@ -101,7 +101,7 @@ nav ul li a:hover {
 
 .close:hover,
 .close:focus {
-    color: #2D3048;
+    color: #3F8EFC;
     text-decoration: none;
     cursor: pointer;
 }
@@ -135,7 +135,7 @@ footer {
 }
 
 #contact-modal ul li a:hover {
-    background-color: #2D3048;
+    background-color: #3F8EFC;
     color: #F0F3F7;
 }
 
@@ -153,7 +153,7 @@ footer {
 }
 
 .contact-button:hover {
-    background-color: #2D3048;
+    background-color: #3F8EFC;
     color: #F0F3F7;
 }
 
