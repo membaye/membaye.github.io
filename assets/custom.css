@@ -1,3 +1,97 @@
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #F0F3F7; /* White background */
+    color: #2F2F2F; /* Dark text color */
+    line-height: 1.6;
+}
+
+header {
+    background: #F0F3F7;
+    color: #2F2F2F;
+    padding: 40px 0;
+    text-align: center;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #2F2F2F;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.resume-button {
+    background-color: #EEC643;
+    color: #2F2F2F;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    display: inline-block;
+}
+
+.resume-button:hover {
+    background-color: #2F2F2F;
+    color: #F0F3F7;
+}
+
+.contact-button {
+    background-color: #EEC643;
+    color: #2F2F2F;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+    display: inline-block;
+}
+
+.contact-button:hover {
+    background-color: #2F2F2F;
+    color: #F0F3F7;
+}
+
+main {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 30px;
+    background: #F0F3F7;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #F0F3F7;
+    color: #2F2F2F;
+}
+
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
