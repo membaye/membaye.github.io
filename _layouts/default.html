@@ -13,8 +13,8 @@
         <h1>{{ site.title }}</h1>
         <nav>
             <ul>
-                <li><a href="#" id="resume-button" class="resume-button">Resume</a></li>
-                <li><a href="#" id="contact-button" class="contact-button">Contact</a></li>
+                <li><a href="#" id="resume-button">Resume</a></li>
+                <li><a href="#" id="contact-button">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -30,12 +30,11 @@
         <div class="modal-content">
             <span class="close">&times;</span>
             <h2>Contact Me</h2>
-            <div class="contact-modal-buttons">
-                <a href="https://github.com/membaye" target="_blank">GitHub</a>
-                <a href="https://www.linkedin.com/in/matthewembaye/" target="_blank">LinkedIn</a>
-                <a href="mailto:membaye@uwaterloo.ca">Email</a>
-                <span class="contact-modal-email-display">membaye@uwaterloo.ca</span>
-            </div>
+            <ul>
+                <li><a href="https://github.com/membaye" target="_blank">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/matthewembaye/" target="_blank">LinkedIn</a></li>
+                <li>Email: <a href="mailto:membaye@uwaterloo.ca">membaye@uwaterloo.ca</a></li>
+            </ul>
         </div>
     </div>
 
@@ -43,11 +42,13 @@
     <div id="resume-overlay" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
-            <iframe src="{{ '/assets/resume.pdf' | relative_url }}"></iframe>
+            <img src="{{ '/assets/resume.png' | relative_url }}" alt="Resume" style="width:100%; height:auto;">
+            <a href="{{ '/assets/resume.png' | relative_url }}" download="Matthew_Embaye_Resume.png" class="download-button">Download Resume</a>
         </div>
     </div>
 
     <script>
+        // JavaScript to handle the modals
         const contactButton = document.getElementById('contact-button');
         const contactModal = document.getElementById('contact-modal');
         const resumeButton = document.getElementById('resume-button');
