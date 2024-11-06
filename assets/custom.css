@@ -38,7 +38,7 @@ nav ul li a {
 
 nav ul li a:hover {
     background-color: #2D3048;
-    color: #2F2F2F;
+    color: #F0F3F7;
 }
 
 /* Modals */
@@ -79,7 +79,7 @@ nav ul li a:hover {
     display: inline-block;
     padding: 10px 20px;
     background-color: #2D3048;
-    color: #212227;
+    color: #F0F3F7;
     text-align: center;
     text-decoration: none;
     border-radius: 5px;
@@ -87,7 +87,7 @@ nav ul li a:hover {
 }
 
 .download-button:hover {
-    background-color: #2F2F2F;
+    background-color: #F0F3F7;
     color: #2D3048;
 }
 
@@ -136,7 +136,7 @@ footer {
 
 #contact-modal ul li a:hover {
     background-color: #2D3048;
-    color: #212227;
+    color: #F0F3F7;
 }
 
 /* Buttons for Contact Info */
@@ -154,7 +154,7 @@ footer {
 
 .contact-button:hover {
     background-color: #2D3048;
-    color: #212227;
+    color: #F0F3F7;
 }
 
 /* Block section styling */
