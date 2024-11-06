@@ -1,3 +1,4 @@
+/* Reset some default styles */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,17 +7,17 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #212227; /* Dark background */
-    color: #F0F3F7; /* Light text color */
+    background-color: #F0F3F7; /* White background */
+    color: #2F2F2F; /* Dark text color */
     line-height: 1.6;
 }
 
 header {
-    background: #2F2F2F;
-    color: #F0F3F7;
+    background: #F0F3F7;
+    color: #2F2F2F;
     padding: 40px 0;
     text-align: center;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
@@ -36,7 +37,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #F0F3F7;
+    color: #2F2F2F;
     text-decoration: none;
     padding: 10px 15px;
     border-radius: 5px;
@@ -55,8 +56,8 @@ nav ul li a {
 }
 
 .resume-button:hover {
-    background-color: #F0F3F7;
-    color: #2F2F2F;
+    background-color: #2F2F2F;
+    color: #F0F3F7;
 }
 
 .contact-button {
@@ -71,24 +72,24 @@ nav ul li a {
 }
 
 .contact-button:hover {
-    background-color: #F0F3F7;
-    color: #2F2F2F;
+    background-color: #2F2F2F;
+    color: #F0F3F7;
 }
 
 main {
     max-width: 800px;
     margin: 30px auto;
     padding: 30px;
-    background: #2F2F2F;
+    background: #F0F3F7;
     border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 footer {
     text-align: center;
     padding: 20px;
-    background: #2F2F2F;
-    color: #F0F3F7;
+    background: #F0F3F7;
+    color: #2F2F2F;
 }
 
 /* Modal Styles */
@@ -104,19 +105,20 @@ footer {
 }
 
 .modal-content {
-    background-color: #2F2F2F;
+    background-color: #FFFFFF;
     margin: 5% auto;
     padding: 20px;
-    width: 80%;
-    height: 80%;
+    width: 85%;
+    height: 85%;
     border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 #resume-overlay iframe {
     border: none;
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 
 .modal-content .close {
@@ -128,7 +130,7 @@ footer {
 }
 
 .modal-content .close:hover {
-    color: #F0F3F7;
+    color: #2F2F2F;
 }
 
 /* Buttons in Contact Modal */
@@ -150,12 +152,12 @@ footer {
 }
 
 .contact-modal-buttons a:hover {
-    background-color: #F0F3F7;
-    color: #2F2F2F;
+    background-color: #2F2F2F;
+    color: #F0F3F7;
 }
 
 .contact-modal-email-display {
-    color: #EEC643;
+    color: #2F2F2F;
     font-size: 1rem;
     margin-left: 10px;
 }
