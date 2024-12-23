@@ -448,7 +448,7 @@ section {
     font-size: 2rem;
     color: rgb(248, 206, 128);
     animation: 
-      typing 3s steps(8, end) forwards;
+      typing 3s steps(20, 8) forwards;
     margin-bottom: 25px;
     margin-top: 50px;
     width: min-content;
@@ -522,7 +522,7 @@ section {
         font-size: .8rem;
         color: rgb(248, 206, 128);
         animation: 
-          typing 3s steps(8, end) forwards;
+          typing 3s steps(20, 8) forwards;
         margin-bottom: 10px;
         width: 100%;
         font-family: "Ubuntu", monospace;
