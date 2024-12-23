@@ -448,7 +448,7 @@ section {
     font-size: 2rem;
     color: rgb(248, 206, 128);
     animation: 
-      typing 9s steps(3, end) forwards;
+      typing 3s steps(8, end) forwards;
     margin-bottom: 25px;
     margin-top: 50px;
     width: min-content;
@@ -466,7 +466,7 @@ section {
     cursor: pointer;
     font-size: 15px;
     margin-top: 100px;
-    color: rgb(250, 200, 91);
+    color: rgb(248, 206, 128);
     text-decoration: underline;
 }
 
@@ -481,17 +481,6 @@ section {
         overflow-wrap: break-word;
         border-radius: 40px;
         height: 100vh;
-    }
-
-    .metalgear {
-        height: 300px;
-        width: 100%;
-        align-self: center;
-        margin-top: 0px;
-        margin-bottom: -50px;
-        margin-top: -70px;
-        margin-left: 0;
-        margin-right: 0;
     }
 
     .aboutcontent {
@@ -531,9 +520,9 @@ section {
         border-right: .15em solid orange;
         white-space: nowrap;
         font-size: .8rem;
-        color: rgb(255, 177, 76);
+        color: rgb(248, 206, 128);
         animation: 
-          typing 10s steps(60, end) forwards;
+          typing 3s steps(8, end) forwards;
         margin-bottom: 10px;
         width: 100%;
         font-family: "Ubuntu", monospace;
