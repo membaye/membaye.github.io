@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M's Portfolio</title>
+    <link href="assets/Untitled drawing.png" rel="icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body style="background-color: #141414;">
+    <nav id="desktop-nav">
+        <div class="logo">
+            <a href="index.html"><h1 class="logotop">m</h1></a>
+            <p class="logobottom">Electrical Engineer</p>
+        </div>
+            <ul class="nav-links">
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">
+            <h1 class="logotop">M</h1>
+            <p class="logobottom">Electrical Engineer</p>
+        </div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile"> 
+        <div class="section__text">
+            <h1 class="title">M</h1>
+            <div class="containertypedout">
+                <p class="typed-out">Electrical/Hardware Engineer.</p>
+            </div>
+            <div class="btn-container">
+                <!--CHANGE THE PDF DOCUMENT/DIRECTORY AFTER UPDATING RESUME!!! -->
+                <button class="btn btn-color-2" onclick="window.open('assets/resume.pdf')">Resume</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin-app-white-icon.webp" alt="My LinkedIn" class="icon" onclick="location.href= 'https://linkedin.com/in/'"> 
+                <img src="./assets/github_icon.png" alt="My Github" class="icon" onclick="location.href= 'https://github.com/'">
+            </div>
+        </div>
+
+    </section>
+    <section id="about">
+    <p class="titleabout">About Me</p>
+        <div class="aboutcontent">
+            <div class="about__text"> 
+                <p class="hithere">&#60;Welcome!</p>
+                <p class="textabout"> 
+                    My name is m.
+                    <br><br>
+                    I am currently pursuing my Bachelor of Applied Science (BASc) in Electrical Engineering at the University of Waterloo.
+                    <br><br> Driven by curiosity and a passion for innovation, I am dedicated to pushing the boundaries of technology and solving challenging problems. My primary interests lie in power electronics, PCB design, handheld electronics, and the rapidly evolving field of electric vehicles (EVs).
+                    <br> I have a deep love for creating and experimenting, evident in my personal projects such as the Multimeter Business Card PCB, the BIONIC EVO: Prosthetic Arm, and an AC-DC Flyback Converter. Each project reflects my desire to bring concepts to life and contribute to practical, impactful solutions.
+                    <br> I am well-versed in PCB design, power electronics, embedded systems, battery management design, and photovoltaic systems, and I consistently leverage my expertise in mathematics and physics to approach problems with a strong analytical foundation.
+
+                    <br><br>Electrical engineering is more than just a field of study for me — it is a lifelong passion that fuels my creativity and drive to make a difference.
+
+                    <br><br>Thanks for swinging by my portfolio – your time is greatly appreciated! Let's connect and explore potential collaborations together.
+                </p>
+                
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <p class="titleskills">Skills</p>
+            <div class="skillscontent">
+
+            <p class="softwaretitle">Software</p>
+                <div class="softwareskills">
+                    <div class="softwareimange-1">
+                        <img class="skillsimage" src="assets/altium_logo-removebg-preview.png" alt="">
+                        <p>Altium</p>
+                    </div>
+
+                    <div class="softwareimange-2">
+                        <img class="skillsimage" src="assets/kicadlogo.png" alt="">
+                        <p>KiCad</p>
+                    </div>
+
+                    <div class="softwareimange-3">
+                        <img class="skillsimage" src="assets/ltspicelogo.png" alt="">
+                        <p>LTSpice</p>
+                    </div>
+
+                    <div class="softwareimange-6">
+                        <img class="skillsimage" src="assets/fusionlogo.png" alt="">
+                        <p>Fusion 360</p>
+                    </div>
+
+                    <div class="softwareimange-7">
+                        <img class="skillsimage" src="assets/autodesk-revit-product-icon-128@2x.png" alt="">
+                        <p>Revit</p>
+                    </div>
+
+                    <div class="softwareimange-8">
+                        <img class="skillsimage" src="assets/photoshoplogo.png" alt="">
+                        <p>Photoshop</p>
+                    </div>
+                    
+                    <div class="softwareimange-4">
+                        <img class="skillsimage" src="assets/Microsoft_Office_Excel_(2019–present).svg.png" alt="">
+                        <p>Excel</p>
+                    </div>
+                </div>
+
+                <p class="programmingtitle">Languages</p>
+                <div class="programmingskills">
+                    <div>
+                        <img class="skillsimage" src="assets/cpplogo.png" alt="">
+                        <p>C++</p>
+                    </div>
+
+                    <div>
+                        <img class="skillsimage" src="assets/sqllogo.png" alt="">
+                        <p>SQL</p>
+                    </div>
+
+                </div>
+
+            </div>
+            </div>
+    </section>
+    <section id="contact">
+        <p class="titlecontact">Contact Me</p>
+            <div class="contactcontent">
+                <div class="contactform">   
+                    <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+                        <div class="contact-left-title">
+                            <h2>Reach Out!</h2>
+                            <hr>
+                        </div>
+                        <input type="hidden" name="access_key" value="8a6af71a-7184-4651-9736-66925bc3fd90">
+                        <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+                        <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+                        <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+                        <button type="submit">Submit &#8594;</button>
+                    </form>                 
+                    <div class="contact-right">
+                        <div class="phonenumber">
+                            <img class="phoneicon"src="assets/phone-white-icon-23.png" alt="Phone icon">
+                            <p class="phonetext">
+                            Phone #: 
+                            </p>
+                        </div>
+
+                        <div class="email">
+                            <img class="emailicon"src="assets/email-xxl.png" alt="Phone icon">
+                            <p class="emailtext">
+                            Email: m@gmail.com
+                            </p>
+                        </div>
+                        
+                        <button class="linkedin">
+                            <img class="linkedinimage"src="assets/linkedin-app-white-icon.webp" alt="linkedin" onclick="location.href= 'https://linkedin.com/in/'">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </section>
+    <footer class="footer">
+        <ul class="social-icon">
+          <li class="social-icon__item"><a class="social-icon__link" onclick="location.href= 'https://linkedin.com/in/'">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a></li>
+          <li class="social-icon__item"><a class="social-icon__link" onclick="location.href= 'https://github.com/'">
+              <ion-icon name="logo-github"></ion-icon>
+            </a></li>
+        </ul>
+        <ul class="menu">
+          <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+          <li class="menu__item"><a class="menu__link" href="projects.html">Projects</a></li>
+    
+        </ul>
+        <p>m</p>
+    </footer>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
