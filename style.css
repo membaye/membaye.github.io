@@ -221,7 +221,7 @@ section {
     overflow: hidden;
     text-align: center;
     color: rgb(255, 253, 133);
-    border-right: .15em solid orange;
+    border-right: .15em solid #fffd85;
     white-space: nowrap;
     font-size: 2rem;
     width: fit-content;
@@ -443,15 +443,15 @@ section {
   .hithere {
     overflow: hidden;
     text-align: left;
-    border-right: .15em solid orange;
+    border-right: .15em solid #fffd85;
     white-space: nowrap;
     font-size: 2rem;
     color: rgb(255, 253, 133);
     animation: 
-      typing 3s steps(20, 8) forwards;
+      typing 3s steps(20, end) forwards;
     margin-bottom: 25px;
     margin-top: 50px;
-    width: min-content;
+    max-width: 26%;
     font-family: "Ubuntu", monospace;
   }
 
@@ -459,7 +459,8 @@ section {
     text-align: left;
     font-size: 18px;
     color: rgb(183, 183, 183);
-    font-family: "Ubuntu", monospace;    
+    font-family: "Ubuntu", monospace;
+    margin-left: 20px;
 }
 
 .extra {
