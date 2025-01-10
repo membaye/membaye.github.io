@@ -451,8 +451,9 @@ section {
       typing 3s steps(20, end) forwards;
     margin-bottom: 25px;
     margin-top: 50px;
-    max-width: 26%;
+    max-width: 13%;
     font-family: "Ubuntu", monospace;
+    margin-left: 20px;
   }
 
 .textabout {
@@ -461,6 +462,7 @@ section {
     color: rgb(183, 183, 183);
     font-family: "Ubuntu", monospace;
     margin-left: 20px;
+    padding-bottom: 30px;
 }
 
 .extra {
