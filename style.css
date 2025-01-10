@@ -220,7 +220,7 @@ section {
 .typed-out{
     overflow: hidden;
     text-align: center;
-    color: rgb(248, 206, 128);
+    color: rgb(133, 255, 167);
     border-right: .15em solid orange;
     white-space: nowrap;
     font-size: 2rem;
@@ -276,7 +276,7 @@ section {
     .section__text p {
         font-size: 1.2rem;
         margin-bottom: 1rem;
-        color: rgb(248, 206, 128);
+        color: rgb(133, 255, 167);
     }
 
     .logotop{
@@ -342,7 +342,7 @@ section {
 .btn-color-1:hover, 
 .btn-color-2:hover{
     cursor: pointer;
-    box-shadow: rgb(248, 206, 128) 0px 7px 0px 0px;
+    box-shadow: rgb(133, 255, 167) 0px 7px 0px 0px;
 }
 
 .btn-color-1:hover,
@@ -359,9 +359,9 @@ section {
 
 .btn-color-1:active,
 .btn-color-2:active {
-    background-color: rgb(248, 206, 128);
+    background-color: rgb(133, 255, 167);
     /*50, 168, 80*/
-    box-shadow: rgb(248, 206, 128) 0px 0px 0px 0px;
+    box-shadow: rgb(133, 255, 167) 0px 0px 0px 0px;
     transform: translateY(5px);
     transition: 200ms;
   }
