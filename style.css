@@ -443,10 +443,10 @@ section {
   .hithere {
     overflow: hidden;
     text-align: left;
-    border-right: .15em solid #fffd85;
+    border-right: .15em solid #ffe96c;
     white-space: nowrap;
     font-size: 2rem;
-    color: rgb(255, 253, 133);
+    color: rgb(255, 233, 108);
     animation: 
       typing 3s steps(20, end) forwards;
     margin-bottom: 25px;
@@ -469,7 +469,7 @@ section {
     cursor: pointer;
     font-size: 15px;
     margin-top: 100px;
-    color: rgb(255, 253, 133);
+    color: rgb(255, 233, 108);
     text-decoration: underline;
 }
 
@@ -520,15 +520,17 @@ section {
 
     .hithere {
         text-align: center;
-        border-right: .15em solid orange;
+        border-right: .15em #ffe96c;
         white-space: nowrap;
         font-size: .8rem;
-        color: rgb(255, 253, 133);
+        color: rgb(255, 233, 108);
         animation: 
-          typing 3s steps(20, 8) forwards;
-        margin-bottom: 10px;
-        width: 100%;
+          typing 3s steps(20, end) forwards;
+        margin-bottom: 25px;
+        margin-top: 50px;
+        max-width: 13%;
         font-family: "Ubuntu", monospace;
+        margin-left: 20px;
       }
     
     .extra {
